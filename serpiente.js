@@ -220,11 +220,10 @@ function moverArriba(crecer) {
  * Modifica la variable global de dirección en base a la acción del usuario.
  */
 function cambiarDireccion(direccion) {
-  // Evita que la serpiente gire 180 grados sobre sí misma directamente
-  if (direccion === "derecha" && direccionActual === "izquierda") return;
-  if (direccion === "izquierda" && direccionActual === "derecha") return;
-  if (direccion === "arriba" && direccionActual === "abajo") return;
-  if (direccion === "abajo" && direccionActual === "arriba") return;
+  if (direccion == "derecha" && direccionActual == "izquierda") return;
+  if (direccion == "izquierda" && direccionActual == "derecha") return;
+  if (direccion == "abajo" && direccionActual == "arriba") return;
+  if (direccion == "arriba" && direccionActual == "abajo") return;
 
   direccionActual = direccion;
 }
